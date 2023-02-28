@@ -1,12 +1,12 @@
 .wrapper {
     border: 5px solid black;
-    top: 50%;
+    top: 52%;
     left: 50%;
     position: absolute;
     width: 600px;
-    height: 600px;
+    height: 800px;
     transform: translate(-50%, -50%);
-    background: url()
+    background: url('azul.png');
 }
 canvas {
     position: absolute;

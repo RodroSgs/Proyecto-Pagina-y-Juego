@@ -19,6 +19,30 @@ class Frogger {
                 this.moving = true;
             }
         }
+        if (keys[40]){ //down
+            if (this.moving == false){
+                if (this.moving === false && this.y < canvas.height - this.height * 2){
+                    this.y += grid;
+                    this.moving = true;
+                }
+            }
+        }
+        if (keys[37]){ //left
+            if (this.moving == false){
+                if (this.moving === false && this.x > this.width){
+                    this.x += grid;
+                    this.moving = true;
+                }
+            }
+        }
+        if (keys[40]){ //right
+            if (this.moving == false){
+                if (this.moving === false && this.x < canvas.width - this.width * 2){
+                    this.x += grid;
+                    this.moving = true;
+                }
+            }
+        }
     }
     draw(){
         ctx3.fillStyle = 'green'

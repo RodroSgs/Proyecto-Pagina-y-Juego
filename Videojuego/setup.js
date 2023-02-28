@@ -31,5 +31,5 @@ let keys = [];
 let score = 0;
 let collisionsCount = 0;
 let frame = 0; 
-let gameSpeed = 1;
+let gameSpeed = 1;  
  
