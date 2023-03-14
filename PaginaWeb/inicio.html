@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGMing</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2687/2687160.png">
+    <script src="https://kit.fontawesome.com/321e7a3d45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#"><img src="images/SGMing Logo gif.gif" width="200px"></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">CREADORES</a></li>
+                <li><a href="#">JUEGO</a></li>
+                <li><a href="#">PROCESO</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner"></div>
+    
+    <section class="about">
+        <div class="tittle">SGMing</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptates magnam maiores obcaecati, reiciendis aperiam sunt! Veritatis, nostrum culpa dolores, minus commodi beatae sint, inventore rem dignissimos ipsam sunt deserunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptates magnam maiores obcaecati, reiciendis aperiam sunt! Veritatis, nostrum culpa dolores, minus commodi beatae sint, inventore rem dignissimos ipsam sunt deserunt.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, animi, doloribus pariatur assumenda illum necessitatibus numquam minus, nihil quis inventore consequatur totam distinctio deserunt fugiat eaque officia nisi dolores. Debitis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vitae reiciendis. Modi officiis libero tempora cumque nesciunt esse dolore eveniet dolorum, laboriosam, illum earum accusamus eligendi fuga nemo nam voluptatum!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, animi, doloribus pariatur assumenda illum necessitatibus numquam minus, nihil quis inventore consequatur totam distinctio deserunt fugiat eaque officia nisi dolores. Debitis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vitae reiciendis. Modi officiis libero tempora cumque nesciunt esse dolore eveniet dolorum, laboriosam, illum earum accusamus eligendi fuga nemo nam voluptatum!</p>
+    </section>
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+       
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabledScroll");
+        }
+
+        cancelBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll");
+        }
+
+        window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+</body>
+</html>

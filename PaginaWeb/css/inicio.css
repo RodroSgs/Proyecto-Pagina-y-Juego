@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**Header**/
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+.navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 0;
+    transition: 0.6s;
+    font-family: "Londrina Solid", cursive;
+}
+
+.navbar.sticky {
+    padding: 18px 0;
+    background: #141510;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a img {
+    background: #141510;
+    border-radius: 50px;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0 10px;
+    transition: 0.28s;
+    transition-property: color, background;
+}
+
+.menu-list li a:hover {
+    color: #fff;
+    background: rgb(48, 174, 116);
+}
+
+/**Imagen de atrás**/
+.banner {
+    height: 79vh;
+    background: url(https://media.discordapp.net/attachments/457618477679771669/1084959783163007016/Planeta.png?width=1001&height=597) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: change 10s infinite ease-in-out;
+}
+
+/**Acerca de**/
+.about {
+    padding: 40px 0;
+}
+
+.about .tittle {
+    font-family: "Londrina Solid", cursive;
+    letter-spacing: 2px;
+    font-size: 85px;
+    font-weight:700;
+    text-align: center;
+}
+
+.about p {
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+/**Icono barritas**/
+.icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/**Icono tache guarache**/
+.icon.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/**-----------------------------**/
+
+/** Cosas del Header **/
+@media (max-width: 868px) {
+
+    body.disabledScroll {
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block ;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .navbar .menu-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3 ease;
+    }
+
+    .navbar .menu-list.active {
+        left: 0%;
+    }
+
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+
+    .navbar .menu-list li a {
+        font-size: 23px;
+    }
+}
+
+/**Background cambiante**/
+@keyframes change {
+    0%
+    {
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085017977864331315/deberia_dejar_de_guardar_imagenes.png?width=1177&height=591);
+    }
+
+    50%
+    {
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085014393118543893/Cd_Mexico_coparmex.jpg?width=1032&height=597);
+    }
+
+    100%
+    {
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085017002118238341/allfons.ru-3144.jpg?width=1062&height=597);
+    }
+
+}
