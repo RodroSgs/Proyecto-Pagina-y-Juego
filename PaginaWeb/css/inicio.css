@@ -68,7 +68,7 @@
 /**Imagen de atrás**/
 .banner {
     height: 79vh;
-    background: url(https://media.discordapp.net/attachments/457618477679771669/1084959783163007016/Planeta.png?width=1001&height=597) no-repeat;
+    background: url(https://media.discordapp.net/attachments/457618477679771669/1085885620997603359/2826623-1.png?width=1062&height=597) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -81,60 +81,96 @@
     background-color: #caefe7;
 }
 
+.general {
+    margin: auto;
+    margin-top: 50px;
+    width: 1250px;
+    height: 1620px;
+    background-color: red;
+    font-family: 'Varela Round', sans-serif;
+}
+
 .lado {
-    display: flex;
+    width: 500px;
+    padding: 30px;
+    float: left;
+    background-color: green;
 }
 
-.derecha {
-    background-color: #63e0c7;
-    border-radius: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.izquierda {
-    background-color: #63e0c7;
-    border-radius: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.derecha h1 {
-    font-family: "Londrina Solid", cursive;
-    letter-spacing: 2px;
-    font-size: 85px;
-    font-weight:700;
-    text-align: center;
+.lado h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
     color: white;
 }
 
-.izquierda h1 {
-    font-family: "Londrina Solid", cursive;
-    letter-spacing: 2px;
-    font-size: 85px;
-    font-weight:700;
-    text-align: center;
+.lado p {
     color: white;
-}
-
-.derecha p {
-    font-family: 'Varela Round', sans-serif;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: justify;
+    font-weight: 200;
+    line-height: 200%;
+    margin-bottom: 20px;
+}
+
+.lado li {
+    list-style: none;
+}
+
+.lado li a{
+    color: white;
+    text-align: justify;
+    font-weight: 200;
+    text-decoration: none;
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+
+.top {
+    width: 700px;
+    height: 200px;
+    float: right;
+    background-color: blue;
+}
+
+.top h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 100px;
+    font-family: "Londrina Solid", cursive;
+}
+
+.texto {
+    width: 700px;
+    padding: 30px;
+    float: right;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-size: cover;
+    background-color: #63e0c7;
+}
+
+.texto h1 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 50px;
     color: white;
 }
 
-.izquierda p {
-    font-family: 'Varela Round', sans-serif;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: justify;
+.texto p {
     color: white;
+    text-align: justify;
+    font-weight: 200;
+    line-height: 200%;
+    margin-bottom: 20px;
+}
+
+.texto li {
+    color: white;
+    text-align: justify;
+    font-weight: 200;
+    line-height: 200%;
+    margin-bottom: 20px;
 }
 
 /**footer**/
@@ -309,17 +345,17 @@ ul {
 @keyframes change {
     0%
     {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085017977864331315/deberia_dejar_de_guardar_imagenes.png?width=1177&height=591);
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085884841041600543/firewatch_2.jpg?width=1176&height=492);
     }
 
     50%
     {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085014393118543893/Cd_Mexico_coparmex.jpg?width=1032&height=597);
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085884856535355514/firewatch1.jpg?width=1176&height=492);
     }
 
     100%
     {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085017002118238341/allfons.ru-3144.jpg?width=1062&height=597);
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085885337026429008/679478.png?width=1062&height=597);
     }
 
 }
