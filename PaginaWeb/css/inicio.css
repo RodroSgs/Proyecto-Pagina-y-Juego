@@ -78,22 +78,156 @@
 /**Acerca de**/
 .about {
     padding: 40px 0;
+    background-color: #caefe7;
 }
 
-.about .tittle {
+.lado {
+    display: flex;
+}
+
+.derecha {
+    background-color: #63e0c7;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.izquierda {
+    background-color: #63e0c7;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.derecha h1 {
     font-family: "Londrina Solid", cursive;
     letter-spacing: 2px;
     font-size: 85px;
     font-weight:700;
     text-align: center;
+    color: white;
 }
 
-.about p {
+.izquierda h1 {
+    font-family: "Londrina Solid", cursive;
+    letter-spacing: 2px;
+    font-size: 85px;
+    font-weight:700;
+    text-align: center;
+    color: white;
+}
+
+.derecha p {
     font-family: 'Varela Round', sans-serif;
     margin-left: 70px;
     margin-right: 70px;
     padding-top: 20px;
+    padding-bottom: 20px;
     text-align: justify;
+    color: white;
+}
+
+.izquierda p {
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    color: white;
+}
+
+/**footer**/
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(48, 174, 116);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col h5 {
+    font-size: 16px;
+    color: #bbbb;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #24262b;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: white;
+    background-color: rgb(48, 174, 116);
 }
 
 /**Icono barritas**/
@@ -111,11 +245,12 @@
     top: 20px;
 }
 
-/**-----------------------------**/
+/**---------RESPONSIVE----------**/
 
 /** Cosas del Header **/
 @media (max-width: 868px) {
 
+    /**header**/
     body.disabledScroll {
         overflow: hidden;
     }
@@ -153,8 +288,23 @@
     .navbar .menu-list li a {
         font-size: 23px;
     }
+
+    /**footer**/
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
 
+/**Responsive 2.0**/
+/**footer**/
+@media (max-width: 520px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/**----------------------------**/
 /**Background cambiante**/
 @keyframes change {
     0%
