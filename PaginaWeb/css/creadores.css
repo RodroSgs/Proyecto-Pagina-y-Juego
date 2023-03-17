@@ -78,6 +78,7 @@
     min-height: 100vh;
     font-family: 'Varela Round', sans-serif;
 }
+
 .about {
     position: relative;
     width: 1000px;
@@ -86,6 +87,17 @@
     flex-wrap: wrap;
     margin: 20px 0;
     margin-top: 100px;
+}
+/** ¿? **/
+.about .encabezado h1 {
+    display: block;
+    position: initial;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 100px;
+    margin-left: 200px;
+    font-family: "Londrina Solid", cursive;
 }
 
 .about .card {
@@ -139,7 +151,7 @@
 }
 
 .about .card:hover .imgBx img {
-    max-width: 75px;
+    max-width: 120px;
 }
 
 .about .card .conten {
@@ -157,6 +169,10 @@
     margin-bottom: 5px;
     font-size: 24px;
 
+}
+
+.about .card .conten p {
+    text-align: justify;
 }
 
 .about .card .conten a {
