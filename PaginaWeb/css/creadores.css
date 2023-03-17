@@ -49,7 +49,7 @@
 
 .menu-list li a {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 1px;
     font-weight: 500;
     margin-left: 25px;
@@ -66,74 +66,105 @@
 }
 
 /**Imagen de atrás**/
-.banner {
-    height: 79vh;
-    background: url(https://media.discordapp.net/attachments/457618477679771669/1084959783163007016/Planeta.png?width=1001&height=597) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    animation: change 10s infinite ease-in-out;
-}
 
-/**Acerca de**/
-.about {
-    padding: 40px 0;
-    background-color: #caefe7;
-}
 
-.lado {
+/**Creadores**/
+
+.fake {
     display: flex;
-}
-
-.derecha {
-    background-color: #63e0c7;
-    border-radius: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.izquierda {
-    background-color: #63e0c7;
-    border-radius: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.derecha h1 {
-    font-family: "Londrina Solid", cursive;
-    letter-spacing: 2px;
-    font-size: 85px;
-    font-weight:700;
-    text-align: center;
-    color: white;
-}
-
-.izquierda h1 {
-    font-family: "Londrina Solid", cursive;
-    letter-spacing: 2px;
-    font-size: 85px;
-    font-weight:700;
-    text-align: center;
-    color: white;
-}
-
-.derecha p {
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    min-height: 100vh;
     font-family: 'Varela Round', sans-serif;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: justify;
-    color: white;
+}
+.about {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    margin-top: 100px;
 }
 
-.izquierda p {
-    font-family: 'Varela Round', sans-serif;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: justify;
+.about .card {
+    position: relative;
+    height: 250px;
+    background: white;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+}
+
+.about .card .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.about .card:hover .imgBx {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #63e0c7;
+}
+
+.about .card .imgBx:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: rgba(255,255,255,.05);
+    font-weight: 700;
+}
+
+.about .card .imgBx img {
+    max-width: 120px;
+    transition: 0.5s ease-in-out;
+}
+
+.about .card:hover .imgBx img {
+    max-width: 75px;
+}
+
+.about .card .conten {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .card .conten h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+
+}
+
+.about .card .conten a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
     color: white;
 }
 
@@ -296,6 +327,47 @@ ul {
     }
 }
 
+@media (max-width: 992px) {
+    .about {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .card {
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about .card .imgBx {
+        position: relative;
+    }
+
+    .about .card .imgBx,
+    .about .card:hover .imgBx {
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+
+    .about .card .imgBx img,
+    .about .card:hover .imgBx img {
+        max-width: 100px;
+    }
+
+    .about .card .conten {
+        position: relative;
+        width: 100%;
+    }
+}
+
 /**Responsive 2.0**/
 /**footer**/
 @media (max-width: 520px) {
@@ -309,17 +381,17 @@ ul {
 @keyframes change {
     0%
     {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085017977864331315/deberia_dejar_de_guardar_imagenes.png?width=1177&height=591);
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085884841041600543/firewatch_2.jpg?width=1176&height=492);
     }
 
     50%
     {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085014393118543893/Cd_Mexico_coparmex.jpg?width=1032&height=597);
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085884856535355514/firewatch1.jpg?width=1176&height=492);
     }
 
     100%
     {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085017002118238341/allfons.ru-3144.jpg?width=1062&height=597);
+        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085885337026429008/679478.png?width=1062&height=597);
     }
 
 }
