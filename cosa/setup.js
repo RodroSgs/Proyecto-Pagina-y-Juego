@@ -22,7 +22,7 @@ const canvas5 = document.getElementById('canvas5');
 const ctx5 = canvas.getContext('2d');
 canvas5.width = 600;
 canvas5.height = 600;
-
+ 
 //global variables
 const grid = 80;
 let keys = [];
@@ -36,4 +36,9 @@ const maxParticles = 300;
 const ripplesArray = [];
 const carsArray = [];
 const logsArray = [];
+
+
+//images
+const fondocalle = new Image();
+fondocalle.src = 'fondocalle.png';
 

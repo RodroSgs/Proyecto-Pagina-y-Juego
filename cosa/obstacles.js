@@ -43,7 +43,16 @@ function initObstacles(){
         carsArray.push(new Obstacle(x, canvas.height - grid * 4 - 20, grid * 2, grid, 2.5, 'car'));
     }
     //lane 4
-
+    for (let i = 0; i < 2; i++){
+        let x = i * 400;
+        logsArray.push(new Obstacle(x, canvas.height - grid * 5 - 20, grid *2, grid, -2, 'log'));
+    }
+    //lane 5
+    for (let i = 0; i < 3; i++){
+        let x = i * 200;
+        logsArray.push(new Obstacle(x, canvas.height - grid * 6 - 20, grid, grid, 1, 'turtle'));
+    }
+ 
 }   
 initObstacles();
 
