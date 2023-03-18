@@ -89,14 +89,17 @@
     margin-top: 170px;
 }
 /** ¿? **/
+
+
 .about .encabezado h1 {
     display: block;
     position: initial;
     color: white;
     text-align: center;
+    margin-top: 65px;
+    margin-left: 125px;
     letter-spacing: 2px;
     font-size: 100px;
-    margin-left: 200px;
     margin-bottom: 20px;
     font-family: "Londrina Solid", cursive;
 }
@@ -104,7 +107,7 @@
 .about .encabezado p {
     color: white;
     text-align: center;
-    margin-left: 200px;
+    margin-left: 120px;
     margin-bottom: 20px;
     font-weight: 200;
 }
