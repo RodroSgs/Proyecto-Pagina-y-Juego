@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGMing</title>
-    <link rel="stylesheet" href="css/inicio.css">
+    <title>Proceso</title>
+    <link rel="stylesheet" href="css/process.css">
     <link rel="shortcut icon" href="https://media.discordapp.net/attachments/457618477679771669/1085369324811849820/SGMing_Logo_Vector.png?width=715&height=597">
     <script src="https://kit.fontawesome.com/321e7a3d45.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
     <nav class="navbar">
         <div class="content">
             <div class="logo">
@@ -31,49 +31,33 @@
             </div>
         </div>
     </nav>
-
-    <div class="banner"></div>
     
-    <section class="about">
-        <div class="general">
-            <div class="top">
-                <h1>SGMing</h1>
+    <div class="conj">
+        <div class="ful-img" id="fulImgBox">
+            <img src="images/frogger_foto.png.crdownload" id="fulImg" alt="">
+            <span onclick="closeImg()">X</span>
             </div>
 
-            <div class="lado">
-                <h2>Developer and publisher</h2>
-                <p>SGMing Pty Ltd</p>
-                <p>Base en Campeche, México</p>
-                <h2>Fundación</h2>
-                <p>Febrero 2023</p>
-                <h2>Sitio WEB</h2>
-                <li><a href="#">SGMing</a></li>
-                <h2>Social</h2>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <img src="images/SGMing Logo Vector.png" width="200px">
-            </div>
-
-            <div class="texto">
-                <h1>Sobre nosotros</h1>
-                <p>SGMing es una compañía de videojuegos indie apasionada y comprometida con la creación de experiencias únicas y emocionantes para los jugadores. Aunque somos una empresa pequeña, tenemos grandes planes para el futuro y estamos emocionados por compartir nuestra visión con la comunidad de jugadores.</p>
-            </div>
-
-            <div class="texto">
-                <h1>Historia</h1>
-                <p>La compañía de videojuegos SGMing fue fundada en el año 2023 por un grupo de jóvenes emprendedores, Rodrigo Sánchez, Sofía Sánchez e Iliana Mariscal, que compartían una pasión común por los videojuegos. Desde el principio, se comprometieron a crear juegos que ofrecieran experiencias únicas y emocionantes para los jugadores de todo el mundo.</p>
-                <p>Después de arduo trabajo, SGMing lanzó su primer videojuego: Bunny Traveler. Este juego de aventuras, acción y plataformas; con gráficos en pixel art, una banda sonora cautivadora y una jugabilidad adictiva, Bunny Traveler se convirtió rápidamente en un éxito de ventas y catapultó a SGMing a la cima de la industria de los videojuegos. Desde entonces, con el éxito de su primer juego se ha estado trabajando en nuevos proyectos.</p>    
-            </div>
-
-            <div class="texto">
-                <h1>Proyectos</h1>
-                <P> Actualmente solo contamos con un videojuego: </P>
-                <li>Bunny Traveler</li>
-            </div>
+        <h1><span>Frogger Original</span></h1>  
+        <div class="img-gallery">
+            <img src="images/frogger_foto.png.crdownload" onclick="openFulImg(this.src)" alt="">
+            <img src="images/frogger_background.png" onclick="openFulImg(this.src)" alt="">
+            <img src="images/frogger-old.png" onclick="openFulImg(this.src)" alt="">
+            <img src="images/salto.jpeg" onclick="openFulImg(this.src)" alt="">
         </div>
-    </section>
+        <script src="script.js"></script>
 
+        <h1><span>Frogger Original</span></h1>  
+        <div class="img-gallery">
+            <img src="images/frogger_foto.png.crdownload" onclick="openFulImg(this.src)" alt="">
+            <img src="images/frogger_background.png" onclick="openFulImg(this.src)" alt="">
+            <img src="images/frogger-old.png" onclick="openFulImg(this.src)" alt="">
+            <img src="images/salto.jpeg" onclick="openFulImg(this.src)" alt="">
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+    
     <script>
         const body = document.querySelector("body");
         const navbar = document.querySelector(".navbar");
@@ -110,10 +94,6 @@
                     <h4>Nuestros Juegos</h4>
                     <ul>
                         <li><a href="#">Bunny Traveler</a></li>
-                        <li><a href="#">Bunny Traveler 2</a></li>
-                        <li><a href="#">Bunny Traveler 3</a></li>
-                        <li><a href="#">Bunny Traveler 4</a></li>
-                        <li><a href="#">Bunny Traveler 5</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -132,7 +112,6 @@
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
