@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="langing.css">
+        <title>Inicio</title>
+        <link rel="shortcut icon" href="https://media.discordapp.net/attachments/457618477679771669/1085369324811849820/SGMing_Logo_Vector.png?width=715&height=597">
+        <script src="https://kit.fontawesome.com/321e7a3d45.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    </head>
+    <body>
+         <!-- particles.js container --> <!-- stats - count particles -->
+
+        <div class="containerHeader">
+            <div id="particles-js"></div>
+            <div class="containMain contenedor">
+                <div class="item">
+                    <h1> SGMing </h1>
+                    <p>
+                        Hola! nosotros somos los creadores de Travel Bunny y de muchas horas de diversión para gamers. Da click aqui para conocer más sobre nosotros y nuestros creadores. 
+
+                    </p>
+                    <button> <a href="about.html"></a> Leer Más 
+                    
+                    </button>
+                </div>
+                <div class="item">
+                    <img src="./images/SGMing Logo Vector.png" alt="Imagen 1">
+                </div>
+            </div>
+        </div>
+
+        <body>
+
+            <!--Barra de navegación-->
+            <nav class="navbar">
+                <div class="content">
+                    <div class="logo">
+                        <a href="#"><img src="images/SGMing Logo gif.gif" width="200px"></a>
+                    </div>
+                    <ul class="menu-list">
+                        <div class="icon cancel-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="inicio.html">ABOUT</a></li>
+                        <li><a href="creadores.html">CREADORES</a></li>
+                        <li><a href="#">JUEGO</a></li>
+                        <li><a href="proceso.html">PROCESO</a></li>
+                    </ul>
+                    <div class="icon menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        
+                <div class="containerR">
+                    
+                </div>
+            </div>
+        </nav>
+
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menu = document.querySelector(".menu-list");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+           
+            menuBtn.onclick = ()=>{
+                menu.classList.add("active");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabledScroll");
+            }
+    
+            cancelBtn.onclick = ()=>{
+                menu.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                body.classList.remove("disabledScroll");
+            }
+    
+            window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- stats.js lib -->
+        <script src="./particles.js"></script>
+    </body>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Misión</h4>
+                    <h5>SGMing es un pequeño estudio de juegos indie en Campeche, México.</h5>
+                    <h5>Nuestra misión es crear increíbles y divertidos mundos para explorar y conquistar. </h5>
+                </div>
+                <div class="footer-col">
+                    <h4>Nuestros Juegos</h4>
+                    <ul>
+                        <li><a href="#">Bunny Traveler</a></li>
+                        <li><a href="#">Bunny Traveler 2</a></li>
+                        <li><a href="#">Bunny Traveler 3</a></li>
+                        <li><a href="#">Bunny Traveler 4</a></li>
+                        <li><a href="#">Bunny Traveler 5</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explora</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="creadores.html">Creadores</a></li>
+                        <li><a href="#">Juego</a></li>
+                        <li><a href="#">Proceso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>¡Síguenos!</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+</html>

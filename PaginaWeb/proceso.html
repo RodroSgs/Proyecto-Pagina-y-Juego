@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGMing</title>
+    <link rel="stylesheet" href="proceso.css">
+    <link rel="shortcut icon"
+        href="https://media.discordapp.net/attachments/457618477679771669/1085369324811849820/SGMing_Logo_Vector.png?width=715&height=597">
+    <script src="https://kit.fontawesome.com/321e7a3d45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#"><img src="images/SGMing Logo gif.gif" width="200px"></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="inicio.html">ABOUT</a></li>
+                <li><a href="creadores.html">CREADORES</a></li>
+                <li><a href="#">JUEGO</a></li>
+                <li><a href="proceso.html">PROCESO</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ful-img" id="fulImgBox">
+        <img src="imgs/1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <h1><span>Frpgger Original</span></h1>
+
+    <div class="img-gallery">
+        <img src="./images/frogger_foto.png.crdownload" onclick="openFulImg(this.src)" alt="http://johnfox.info/portfolio/arcade-game/images/frogger.png">
+        <img src="./images/frogger_background.png" onclick="openFulImg(this.src)" alt="https://www.raspberrypi.org/app/uploads/2019/11/Screen1.png">
+        <img src="./images/frogger-old.png" onclick="openFulImg(this.src)" alt="https://upload.wikimedia.org/wikipedia/en/c/cd/Frogger_game_arcade.png0">
+        <img src="./images/salto.jpeg" onclick="openFulImg(this.src)" alt="https://play-lh.googleusercontent.com/HpYtxkQFxDoyT_yh1UhyKSJSZxwxR9YN8MkNKad8JrUecbBCufBonKa0DM5U8d2r4_El">
+        <img src=" imgs/5.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src=" imgs/6.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src=" imgs/7.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src=" imgs/8.jpg" onclick="openFulImg(this.src)" alt="">
+    </div>
+    <script src="proceso.js"></script>
+
+    <div class="ful-img" id="fulImgBox">
+        <img src="imgs/1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <h1><span>Bunny Traveler</span></h1>
+
+    <div class="img-gallery">
+        <img src= "./images/Bunny Traveler Logotipo.png" onclick="openFulImg(this.src)"  alt="Frogger, ahora es Bunny Traveler.">>
+        <img src= "./images/Conejo_rodro.PNG" onclick="openFulImg(this.src)" alt="Este es Felipe, el sustituto de Felipe, a el igual le gusta saltar">
+        <img src= "./images/nivelex.png" onclick="openFulImg(this.src)" alt="Este es un ejemplo de un nivel del juego.">
+        <img src= "./images/Mar.png" onclick="openFulImg(this.src)"   alt="Felipe no sabe nadar, si cae al mar muere. :c">
+    </div>
+    <script src="proceso.js"></script>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Misión</h4>
+                    <h5>SGMing es un pequeño estudio de juegos indie en Campeche, México.</h5>
+                    <h5>Nuestra misión es crear increíbles y divertidos mundos para explorar y conquistar. </h5>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nuestros Juegos</h4>
+                    <ul>
+                        <li><a href="#">Bunny Traveler</a></li>
+                        <li><a href="#">Bunny Traveler 2</a></li>
+                        <li><a href="#">Bunny Traveler 3</a></li>
+                        <li><a href="#">Bunny Traveler 4</a></li>
+                        <li><a href="#">Bunny Traveler 5</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explora</h4>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="inicio.html">ABOUT</a></li>
+                        <li><a href="creadores.html">CREADORES</a></li>
+                        <li><a href="#">JUEGO</a></li>
+                        <li><a href="proceso.html">PROCESO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>¡Síguenos!</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+       
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabledScroll");
+        }
+
+        cancelBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll");
+        }
+
+        window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+</body>
+</html>
