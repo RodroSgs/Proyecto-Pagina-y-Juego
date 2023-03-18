@@ -1,28 +1,80 @@
-/* IMPORTANDO FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Varela+Round&display=swap');
 
-@font-face
-{
-    font-family: "Londrina-Black";
-    src: url(./fonts/Londrina_Solid/LondrinaSolid-Black.ttf);
-}
-
-@font-face {
-    font-family: "Londrina";
-    src: url(./fonts/Londrina_Solid/LondrinaSolid-Regular.ttf);
-}
-@font-face
-{
-    font-family: "Varela";
-    src: url(./fonts/Varela_Round/VarelaRound-Regular.ttf);
-}
-/* ---- reset ---- */
-
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/**Header**/
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    padding: 25px 0;
+    transition: 0.6s;
+    font-family: "Londrina Solid", cursive;
+}
+
+.navbar.sticky {
+    padding: 18px 0;
+    background: #141510;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a img {
+    background: #141510;
+    border-radius: 50px;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0 10px;
+    transition: 0.28s;
+    transition-property: color, background;
+}
+
+.menu-list li a:hover {
+    color: #fff;
+    background: rgb(48, 174, 116);
+}
+
+/**puertas del infierno**/
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
 
 canvas {
     display: block;
@@ -50,7 +102,7 @@ canvas {
     top: 48px;
     left: 0;
     width: 80px;
-    color: #ffffff;
+    color: #13E8E9;
     font-size: .8em;
     text-align: left;
     text-indent: 4px;
@@ -96,8 +148,8 @@ img
 .containerHeader
 {
     height: 100vh;
-    background-color: rgb(39, 39, 39);
-    background: linear-gradient( 90deg , #000000 0% , #242424 100% );
+    background-color: blue;
+    background: linear-gradient( 90deg , #222 0% , #333 100% );
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -116,33 +168,48 @@ img
 }
 .item h1
 {
-    font-family: "Londrina-Black";
-    font-weight: lighter;
+    font-family: "Londrina Solid", cursive;
+    letter-spacing: 5px;
+    font-size: 150px;
     line-height: 4rem;
-    font-size: 2.6rem;
     text-transform: capitalize;
     color: #FFF;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 .item p
 {
-    font-size: 16px;
-    color:#FFF;
-    font-family: "Varela";
-    line-height: 2rem;
-    margin: 2rem 0;
+    color: white;
+    text-align: justify;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 200%;
+    margin-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
+
 }
-.item button
+.buton
 {
+    text-decoration: none;
+    padding: 14px;
     width: 10rem;
     height: 3rem;
-    background: transparent;
-    font-family: "Varela";
+    background: transparent ;
+    font-family: "Lato";
     text-transform: uppercase;
     color:#FFF;
     border-radius: 50px;
     border: 2px solid #FFF;
     cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
 }
+
+.buton:hover {
+    border: none;
+    background-color: #63c0c7;
+    color: white;
+}
+
 .item:nth-of-type(2)
 {
     display: flex;
@@ -150,63 +217,6 @@ img
     align-items: center;
 }
 
-/* NAVEGACION */
-
-nav
-{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 5rem;
-    padding: .5rem 0;
-}
-nav .contenedor 
-{
-    display: flex;
-    justify-content: space-between;
-}
-.contenedor .containerL
-{
-    display: inherit;
-    align-items: center;
-}
-.containerL h2
-{
-    font-family: "Londrina";
-    font-size: 2rem;
-    color:#FFF;
-}
-.containerLinks
-{
-    margin-left: 4rem;
-}
-.containerLinks a
-{
-    margin-right: 2.5rem;
-    color:#FFF;
-    font-family: "Londrina";
-    font-size: 16px;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-.containerR
-{
-    display: inherit;
-    align-items: center;
-}
-.containerR button 
-{
-    width: 10rem;
-    height: 3rem;
-    border-radius: 50px;
-    background-color: transparent;
-    border: 2px solid #FFF;
-    font-family: "Lato";
-    font-size: 1.2rem;
-    color:#FFF;
-    outline: none;
-    cursor: pointer;
-}
 
 /**footer**/
 
@@ -225,7 +235,7 @@ ul {
 }
 
 .footer {
-    background-color: #24262b;
+    background-color: #141510;
     padding: 70px 0;
     font-family: 'Varela Round', sans-serif;
 }
@@ -292,7 +302,7 @@ ul {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #24262b;
+    color: #141510;
     transition: all 0.5s ease;
 }
 
@@ -345,7 +355,6 @@ ul {
         display: block;
         padding: 40px 0;
         text-align: center;
-        font-family: "Londrina Solid", cursive;
         transition: all 0.3 ease;
     }
 
@@ -368,129 +377,10 @@ ul {
     }
 }
 
-@media (max-width: 992px) {
-    .about {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about .card {
-        width: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .about .card {
-        max-width: 300px;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .about .card .imgBx {
-        position: relative;
-    }
-
-    .about .card .imgBx,
-    .about .card:hover .imgBx {
-        width: 100%;
-        height: 200px;
-        left: 0;
-    }
-
-    .about .card .imgBx img,
-    .about .card:hover .imgBx img {
-        max-width: 100px;
-    }
-
-    .about .card .conten {
-        position: relative;
-        width: 100%;
-    }
-}
-
 /**Responsive 2.0**/
 /**footer**/
 @media (max-width: 520px) {
     .footer-col {
         width: 100%;
     }
-}
-
-/**----------------------------**/
-/**Background cambiante**/
-@keyframes change {
-    0%
-    {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085884841041600543/firewatch_2.jpg?width=1176&height=492);
-    }
-
-    50%
-    {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085884856535355514/firewatch1.jpg?width=1176&height=492);
-    }
-
-    100%
-    {
-        background-image: url(https://media.discordapp.net/attachments/457618477679771669/1085885337026429008/679478.png?width=1062&height=597);
-    }
-
-}
-/**Header**/
-.content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 0px 30px;
-}
-.navbar {
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-    padding: 25px 0;
-    transition: 0.6s;
-    font-family: "Londrina Solid", cursive;
-}
-
-.navbar.sticky {
-    padding: 18px 0;
-    background: #141510;
-}
-
-.navbar .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a img {
-    background: #141510;
-    border-radius: 50px;
-}
-
-.navbar .menu-list {
-    display: inline-flex;
-    transition: 0.5s;
-    transition-property: left;
-}
-
-.menu-list li {
-    list-style: none;
-}
-
-.menu-list li a {
-    color: #ffffff;
-    font-size: 22px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    margin-left: 25px;
-    text-decoration: none;
-    border-radius: 15px;
-    padding: 0 10px;
-    transition: 0.28s;
-    transition-property: color, background;
-}
-
-.menu-list li a:hover {
-    color: #fff;
-    background: rgb(48, 174, 116);
 }
