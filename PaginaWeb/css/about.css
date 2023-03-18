@@ -23,7 +23,7 @@
 
 .navbar.sticky {
     padding: 18px 0;
-    background: #072a23;
+    background: #141510;
 }
 
 .navbar .content {
@@ -49,7 +49,7 @@
 
 .menu-list li a {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 1px;
     font-weight: 500;
     margin-left: 25px;
@@ -62,31 +62,24 @@
 
 .menu-list li a:hover {
     color: #fff;
-    background: rgb(48, 174, 116);
+    background: #63e0c7
+    ;
 }
 
-/**Imagen de atrás**/
-.banner {
-    height: 79vh;
-    background: url(https://media.discordapp.net/attachments/457618477679771669/1085885620997603359/2826623-1.png?width=1062&height=597) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    animation: change 10s infinite ease-in-out;
-}
 
 /**Acerca de**/
 .about {
     padding: 40px 0;
-    background-color: #caefe7;
+    padding-top: 50px;
+    background-color: #222;
 }
 
 .general {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 150px;
     width: 1250px;
     height: 1300px;
-    background-color: r#caefe7; /**cuadro rojo**/
+    background-color: #222; /**cuadro rojo**/
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -94,7 +87,7 @@
     width: 450px;
     padding: 30px;
     float: left;
-    background-color: #caefe7; /**verde**/
+    background-color: #222; /**verde**/
     border-right: white 5px solid;
 }
 
@@ -103,7 +96,7 @@
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 30px;
-    color: white;
+    color: #63e0c7;
 }
 
 .lado p {
@@ -135,7 +128,7 @@
 .top {
     width: 700px;
     float: right;
-    background-color: #caefe7; /**cuadro azul**/
+    background-color: #222; /**cuadro azul**/
 }
 
 .top h1 {
@@ -154,14 +147,14 @@
     margin-top: 20px;
     border-radius: 30px;
     background-size: cover;
-    background-color: #63e0c7;
+    background-color: #333;
 }
 
 .texto h1 {
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 50px;
-    color: white;
+    color: #63e0c7;
 }
 
 .texto p {
@@ -197,7 +190,7 @@ ul {
 }
 
 .footer {
-    background-color: #24262b;
+    background-color: #141510;
     padding: 70px 0;
     font-family: 'Varela Round', sans-serif;
 }
@@ -264,7 +257,7 @@ ul {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #24262b;
+    color: #141510;
     transition: all 0.5s ease;
 }
 

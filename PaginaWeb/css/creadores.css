@@ -62,7 +62,7 @@
 
 .menu-list li a:hover {
     color: #fff;
-    background: rgb(48, 174, 116);
+    background: #63e0c7;
 }
 
 /**Imagen de atrás**/
@@ -106,6 +106,7 @@
     text-align: center;
     margin-left: 200px;
     margin-bottom: 20px;
+    font-weight: 200;
 }
 
 .about .card {
@@ -229,7 +230,7 @@ ul {
 }
 
 .footer {
-    background-color: #24262b;
+    background-color: #141510;
     padding: 70px 0;
     font-family: 'Varela Round', sans-serif;
 }
@@ -296,7 +297,7 @@ ul {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #24262b;
+    color: #141510;
     transition: all 0.5s ease;
 }
 
