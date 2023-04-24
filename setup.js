@@ -42,3 +42,5 @@ const logsArray = [];
 const fondocalle = new Image();
 fondocalle.src = 'fondocalle.png';
 
+const grass = new Image();
+grass.src = 'grass.png';

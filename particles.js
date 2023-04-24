@@ -1,1 +1,47 @@
-particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+class Particle {
+    constructor(x,y){
+        this.x = y + 25;
+        this.y = x + 25;
+        this.radius = Math.random() * 20 + 1;
+        this.opacity = 1;
+        this.directionX = Math.random() * 1 - 0.5;
+        this.directionY = Math.random() * 1 - 0.5;
+    }
+    draw(){
+        ctx3.fillStyle = 'rgba(150,150,150,' + this.opacity + ')';
+        ctx3.beginPath();
+        ctx3.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx3.fill();
+        ctx3.closePath();
+    }
+    update(){
+        this.x += this.directionX;
+        this.y += this.directionY;
+        if (this.opacity > 0.1){
+            this.opacity -= 0.9;
+        }
+        if (this.radius > 0.15){
+            this.radius -= 0.14;
+        }
+    }
+}
+
+
+function handleParticles(){
+    //dust 
+    for (let i = 0; i < particlesArray.length; i++){
+        particlesArray[i].update();
+        particlesArray[i].draw();
+    }
+    if (particlesArray.length > maxParticles){
+        for (let i = 0; i < 30; i++){
+            particlesArray.pop();
+        }
+    }
+   
+    if (((keys[37] || keys[38] || keys[39] || keys[40])) && frogger.y > 250 && particlesArray.length < maxParticles + 10){
+        for (let i = 0; i < 10; i++){
+            particlesArray.unshift(new Particle(frogger.x, frogger.y));
+        }
+    }
+}    
