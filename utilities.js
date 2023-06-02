@@ -15,7 +15,7 @@ animate();
 
 // event listeners
 window.addEventListener('keydown', function(e){
-    keys = []
+    keys = [];
     keys[e.keyCode] = true;
     if (keys[37] || keys[38] || keys[39] || keys[40]){
         frogger.jump();
