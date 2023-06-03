@@ -78,7 +78,7 @@ body {
 
 canvas {
     display: block;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
 }
 
 /* ---- particles.js container ---- */
@@ -117,7 +117,8 @@ canvas {
 }
 
 #stats, .count-particles {
-    -webkit-user-select: none;
+    /*-webkit-user-select: none;*/
+    box-shadow: none;
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -163,9 +164,7 @@ img
     position: absolute;
     z-index: 1;
 }
-.containMain .item
-{
-}
+
 .item h1
 {
     font-family: "Londrina Solid", cursive;
